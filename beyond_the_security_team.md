@@ -30,23 +30,15 @@ I have advocated for some time now that operations teams make the best security 
 
 So what I want to discuss here today is how we turned our organization’s culture from centralizing security to one where ownership is distributed, and each team owns security for their areas. I’d say it took us a little more than three years to get there, but let me start by going back a lot further than that.
 
-
-
-# It didn’t use to be this way
-
-
+## It didn’t use to be this way
 
 I’m french. I grew up in cold and rainy Normandy. It’s not unlike Seattle in many ways. I studied in the Loire Valley and started my career in Paris, back in the mid-2000s. I started out by working in banks, as a security engineer in the web and minitel division of a french bank. If you don’t know what a minitel is, you’re seriously missing out. But that's a story for another time.
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_4_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_4_.png)
 
-
-
 So I was working in suit and tie at a bank in Paris, and the stereotypes were true: we were taking long lunches, occasionally drinking wine and napping during soporific afternoon meetings. Eating lots of cheese and running out of things to do in our 8 or 9 weeks of vacations. Those were the days. And when it came to security, we were the supreme authority of the land. A group of select few that all engineers feared, our words could make projects live or die. 
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_5_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_5_.png)
-
-
 
 This is how a deployment worked back then. This was pre-devops when deployment could take three weeks and everyone was fine with it. An engineering group would kick off a projet, carefully plan it, come up with an elegant and performant design, spend weeks of engineering building the thing. And don’t get me wrong, the engineering teams were absolutely top-notch. Best of the best. 100% french quality that the rest of the world continues to envy us today. Then they would try to deploy their newborn and, “WAIT, what the hell is this?” asks the security team who just discovered the project.
 
@@ -68,15 +60,7 @@ Secondly, non-security teams feel exempt from having to account for security and
 
 We knew back then this model wasn’t sustainable, but there was little incentive to change it. Security teams didn’t want to give up the power they had accumulated over the years. They wanted more power, because security was never good enough and our society as we knew it was going to end in an Armageddon of buffer overflows should the sysadmins disable SELinux in production to allow for rapid release cycles.
 
-
-
-
-
-# Getting closer to devs & ops
-
-
-
-
+## Getting closer to devs & ops
 
 Something that I should mention at this point is I’m an odd security engineer. What I love doing is actually building and shipping software, web applications and internet services in particular. I’ve been doing that for much longer than I’ve been doing security. At some point in my career, I was running a marketing website affiliated with “Who wants to be a millionaire”.
 
@@ -94,18 +78,16 @@ A little more than four years ago, I joined a small operations team focused on b
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote.jpg](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote.jpg)
 
-<span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">So I joined the cloud operations team as a security engineer. The <span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;font-style:italic;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">only <span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">security engineer. In the middle of a dozen of so hardened ops who were running stuff for millions of Firefox users. I live in Florida. We know that swimming in gator infested ponds is just stupid. The same way, security engineers generally avoid getting cornered by hordes of angry sysadmins. They are the enemy, you see. They are the ones who leave mission critical servers open to the internet. They are the ones who don’t change default passwords on network gears. They are the ones who ignore you when you ask for a system update seven times in a row. They are the enemy.
+So I joined the cloud operations team as a security engineer. The **only** security engineer. In the middle of a dozen of so hardened ops who were running stuff for millions of Firefox users. I live in Florida. We know that swimming in gator infested ponds is just stupid. The same way, security engineers generally avoid getting cornered by hordes of angry sysadmins. They are the enemy, you see. They are the ones who leave mission critical servers open to the internet. They are the ones who don’t change default passwords on network gears. They are the ones who ignore you when you ask for a system update seven times in a row. They are the enemy.
 
-<span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">To be fair, they see us the same way. We’re Sauron, on top of our dark tower, overseeing everything. We corrupt the hearts and minds of their leaders. We add impossible requirements to time constrained projects. We generally make their lives impossible.
+To be fair, they see us the same way. We’re Sauron, on top of our dark tower, overseeing everything. We corrupt the hearts and minds of their leaders. We add impossible requirements to time constrained projects. We generally make their lives impossible.
 
-<span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">And here I was. A security guy. Joining an ops team.
+And here I was. A security guy. Joining an ops team.
 
-<span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">By and large, they were nice folks, but it quickly became clear that any attempt at playing the arrogant french security guy who knows it all and dictates how things should be would be met with apathy. I had to win this team over. So I decided to pick a problem, solve it, make their life easier and win myself some goodwill.  
+By and large, they were nice folks, but it quickly became clear that any attempt at playing the arrogant french security guy who knows it all and dictates how things should be would be met with apathy. I had to win this team over. So I decided to pick a problem, solve it, make their life easier and win myself some goodwill.  
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_11_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_11_.png)
 
 I didn’t have to search for long. Literally days before I joined the team, a mistake happened and the git repository containing all the secrets got merged into the configuration management repo. It was a beautiful fuck-up, executed with brio, with the full confidence of a battle-tested engineer who has ran these exact commands hundreds of times before. The culprit is a dear friend and colleague of mine who I like to use as an example of professionalism with the youngsters, and I strongly believe that what failed then was not the human layer, but completely inadequate tooling.
-
-
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_12_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_12_.png)
 
@@ -121,13 +103,12 @@ By the time I had reached the fourth proposal, the ops team had significantly sh
 
 It took a couple of months to get it implemented. The first version was written in ugly Python, with little tests and poor cross-platform support. But it worked, and it continues to work (after a rewrite in Go). The result of this project is the open source secrets management tool called [Sops](https://github.com/mozilla/sops), which has been our internal standard for three and something years now. Since I started this talk, perhaps a dozen EC2 instances have autoscaled and called Sops to decrypt their secrets for provisioning.
 
-# Don’t just build security tools.  
-Build operational tools that do things securely.
+## Don’t just build security tools.  
+## Build operational tools that do things securely.
 
+Today, Sops is popular DevOps tool inside and outside Mozilla, but more importantly, this project laid out the foundation of how security and operations would work together: strong collaboration on complex technical topics. We don’t just build security tools like we used to. We build operational tools that do things securely. This may seem like a distinction without a difference, but I found that it changes the way we think about our work from only being a security team, to being a security team that supports a business with specific operational needs. Effectively, it forces us to be embedded into operations.
 
-
-Today, Sops is popular DevOps tool inside and outside Mozilla, but more importantly, this project laid out the foundation of how security and operations would work together: strong collaboration on complex technical topics. We don’t just build security tools like we used to. We build operational tools that do things securely. This may seem like a distinction without a difference, but I found that it changes the way we think about our work from only being a security team, to being a security team that supports a business with specific operational needs. Effectively, it forces us to be embedded into operations. ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_14_.png]img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_14_.png)
-
+![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_14_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_14_.png)
 
 
 I spent a couple years embedded in that operations team, working closely with devs & ops, sharing their successes and failures, and helping the team mature its security posture from the inside. I wrote [Securing DevOps](https://securing-devops.com) during those years, and I transferred a lot of what I learned from ops into the book.
@@ -142,15 +123,11 @@ The distributed model is pretty much the exact opposite. It has better informati
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_16_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_16_.png)
 
-
-
 The embedding model is sort of a hybrid between these two that tries to get the best of both worlds. Having a strong security organization that reports to an influential CISO is good, and having access to real-world data is also critical to making the right decisions. Security engineers should then report to the CISO but be embedded into engineering teams.
 
 Now, "embedded" here has a strong meaning. It doesn’t just mean that security people snoop into these teams chatrooms and weekly meetings. It means that the engineering managers of these teams have partial control of the security engineers. They can request their time and change their priorities as needed. If a project needs an urgent review, or an incident needs handling, or a tools needs to be written, the security engineers will step in and provide support. That’s how you show the organization that you’re really 100% in, and not just a compliance group on the outskirts of the org.
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_17_.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_17_.png)
-
-
 
 Reverse embedding is also very important, and we’ve had that model in the security industry for many years: it’s called security champions. Security champions are engineers from your organization who have a special interest in security. Oftentimes, they are more senior engineers who are in architect roles or deep experts who consider security to be a critical aspect of their work. They are the security team’s best friends. Its partners throughout the organization. They should be treated with respect and given as much support as possible, because they’ll move mountains for you.
 
@@ -158,19 +135,11 @@ Security champions should have full access to the security team. No closed doors
 
 Champions must also be involved with setting the security strategy. If you’re going to adopt a framework or a platform for its security properties, make sure to consult your champions. If they are on board, they’ll help sell that decision down the engineering chain.
 
-# Avoid Making Assumptions
-
-
-
-
+## Avoid Making Assumptions
 
 If you embed your security engineers into the dev and ops, and open the doors of your organization to security champions, you’ll allow information to flow freely and make better decision. This allow you to dramatically reduce the amount of assumptions you have to make every day, which directly correlates to stronger security.
 
-
-
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/a9XwfzSr3mU" width="560" height="315" frameborder="0"></iframe>
-
-
 
 The first project I worked on when I joined Mozilla was called [MIG](https://github.com/mozilla/mig/), for Mozilla InvestiGator (the logo was a gator, for investigator, get it?). The problem we were trying to solve was inspecting our live systems for indicators of compromise in real-time. Back in 2013, we already had too many servers to run investigations manually. The various method we had tried all had drawbacks. The most successful of them involved running parallel ssh from a bastion host that had ssh keys and firewall rules to connect everywhere. If that sounds terrifying to you, it’s because it was. So my job was to invent a system that could securely connect to all those systems to tell us if a file with a given checksum was present, which would indicate that a malware or backdoor existed on the host.
 
@@ -184,9 +153,7 @@ I’ve grown to learn that assumption are at the root of most vulnerabilities. T
 
 I've made too many assumptions throughout my career, and too often did they prove to be entirely wrong. One of them even [broke Firefox](https://hacks.mozilla.org/2019/07/add-ons-outage-post-mortem-result/) for our entire user base. Nothing good comes from making assumptions.
 
-# Assumptions lead to vulnerability
-
-
+## Assumptions lead to vulnerability
 
 Assumptions leads to vulnerability. Let me say that one more time. Assumptions lead to vulnerability. As security experts, our job is to identify every assumption as a potential security issue. If you only get one thing out of this talk, please let it be this: every time someone uses the word “assume” in any context, reply we “let’s see how we can remove assumption”, or “do we have a test to confirm this?”
 
@@ -204,7 +171,7 @@ Above is an example of an AWS test from our internal framework called “frost�
 
 In this case, we flag an instance as insecure if it is running on an AMI that isn’t owned by us, and that is older than a configured max age. This is a good test, and we can give that data directly to the ops team for action. It’s really worthwhile spending extra time making sure your tests are trustworthy, because otherwise you’re sending compliance reports no one ever reads or take actions on, and you’re pissing people off.
 
-# Setting the expectations
+## Setting the expectations
 
 But data and tests only reflect how well you’re growing the security awareness in your organization. They don’t, in and of themselves, mature your organization. So while it is important to spend time improving your testing tools and metrics gathering frameworks, you should also spend time explaining to the organization what your ideal state is. You should set the expectations.
 
@@ -236,19 +203,19 @@ And something else interesting happened: project managers started tracking compl
 
 The checklist isn’t the only thing that helped improve adoption. Giving developers self-service security tools is also very important. And the approach of giving letter-grades has an interesting psychological effects on engineering teams, because no one wants to ship a production site that gets an F or even a C on the publicly accessible security assessment tool. Everyone wants an A+. And guess what? Following the checklist does give you an A+. That makes the story pretty straightforward: follow the checklist, and you’ll get your nice A+ on the [Observatory](https://observatory.mozilla.org/).
 
-# Clear Expectations  
-↓  
-Checklist  
-↓  
-Self Assessment  
-↓  
-Profit
+## Clear Expectations  
+## ↓  
+## Checklist  
+## ↓  
+## Self Assessment  
+## ↓  
+## Profit
 
 This particular model may not work exactly for your organization. The power dynamics and internal politics may be different. But the general rule still applies: if you want security to be adopted in products that ship, set the expectations early and clearly. Don’t give them vague rules like “only use encryption algorithms that provide more than 128 bits of security”. No one knows what that means. Instead, give them information they can directly translate into code, like a content security policy they can copy and paste then tweak, or a logging library they can import in their apps that spits out the right format from the get go. Set the expectations, and make them easy to follow. Devs and ops are too busy to jump through hoops.
 
 Once you’ve set the expectations, give them checklists and the tools to self-assess. Don’t make your people have to ask you every time they need a check of their webapp, it bothers them as much as it bothers you. Instead, give them security tools that are fully self-service. Give them a chance to be their own security team, and to make you obsolete. Clear expectations and self-service security tools is how you build up adoption.
 
-# Not having to say “no”
+## Not having to say “no”
 
 There is another anti-pattern of security team I’d like to address: it’s the stereotypical “no” team. The team that operates in organizations where engineers keep bringing up projects they feel they have to shut down because of how risky they are. Those security people are usually not a happy bunch. You rarely see them smile. They complain a lot. They look way older than they really are. Maybe they took up drinking.
 
@@ -281,7 +248,7 @@ We call this framework [the “Rapid Risk Assessment”, or RRA](https://infosec
 
 Having a risk assessment framework is nice, but you can also get started without one. In the panel yesterday, [Zane Lackey](https://twitter.com/zanelackey) told the story of introducing risk assessments at Etsy by joining engineering meetings and simply asking "How would you attack this app?" to the devs. This works, I've asked similar questions many times. Guillaume's favorite is "what would happen should the database leak on Twitter?". Devs & Ops are much better at threat modeling than they often realize, and you can see the wheels spinning in their brains when you ask this type of question. Try it out, it's actually fun!
 
-# Being Strategic
+## Being Strategic
 
 By this point in the talk, I hope that I’ve convinced you security is owned well beyond the security team, and you might be tempted to think that, perhaps we could get rid of all those pesky security people altogether. I’ll be honest, that’s the end game for me. The digital world will adopt perfect security. People will carefully consider their actions and take the right amount of risk when appropriate. They will communicate effectively and remove all assumptions in their work. They will treat each other with respect during security incidents and collaborate effectively toward a resolution. And I’ll be serving fresh Mojitos at a Tiki bar over there by the beach.
 
@@ -305,9 +272,8 @@ Whatever decision you make, spend time documenting it, and don’t forget to hav
 
 So in closing, I’d like to leave you with this: a security team must help the organization make strategic security decisions. To do so, it must be trusted. To be trusted, its need to have data, avoid making assumptions, set clear expectations and to avoid saying no. And above all, it must be embedded across the organizations.
 
-# To go beyond the security team
-
-# Get the security team closer to your organization
+## To go beyond the security team
+## Get the security team closer to your organization
 
 Thank you.
 
