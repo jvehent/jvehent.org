@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Quelques Digressions Sous GPL
 
-You can use the [editor on GitHub](https://github.com/jvehent/jvehent.org/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Beyond The Security Team
+*Monday, September 30 2019*
 
-### Markdown
+Note: This is a keynote I gave to DevSecCon Seattle in September 2019.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Good morning everyone, and thank you for joining us on this second day of DevSecCon. My name is Julien Vehent. I run the Firefox Operations Security team at Mozilla, where I lead a team that secures the backend services and infrastructure of Firefox. I’m also the author of Securing DevOps.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jvehent/jvehent.org/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[read more](posts/beyond_the_security_team.html)
