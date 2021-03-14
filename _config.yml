@@ -3,4 +3,5 @@ title: Quelques Digressions Sous GPL
 description: Cloud security, risk management and services engineering. Author of Securing DevOps (securing-devops.com).
 logo: img/id2015.JPG
 url: jvehent.github.io
-baseurl: /jvehent.org
+relative_url: /jvehent.org
+absolute_url: https://jvehent.github.io/jvehent.org
