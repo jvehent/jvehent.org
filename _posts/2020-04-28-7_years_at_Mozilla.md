@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Julien Vehent
+title: 7 years at Mozilla
 ---
 
 Seven years ago, on April 29th 2013, I walked into the old Castro Street Mozilla headquarters in Mountain View for my week of onboarding and orientation. Jubilant and full of imposter syndrom, that day marked the start of a whole new era in my professional career.
