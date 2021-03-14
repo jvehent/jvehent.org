@@ -3,13 +3,7 @@ layout: post
 author: Julien Vehent
 ---
 
-# Beyond The Security Team
-
-_By Julien Vehent, Monday, September 30 2019._
-
-_This is a keynote I gave to DevSecCon Seattle in September 2019._
-
-* * *
+_This post is the transcript of a keynote I gave to DevSecCon Seattle in September 2019._
 
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote.png](img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote.png)
 
