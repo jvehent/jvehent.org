@@ -2,3 +2,27 @@
 ---
 
 @import "{{ site.theme }}";
+
+body {
+    font-family: "New Century Schoolbook","Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+header {
+    width: 20%;
+}
+
+section {
+    width: 70%;
+}
+
+.wrapper.ul.li{
+    border-bottom: 3px dotted gray;
+}
+
+.wrapper.ul.li.h2 {
+    margin: 20px;
+}
