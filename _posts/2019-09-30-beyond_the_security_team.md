@@ -2,6 +2,7 @@
 layout: post
 author: Julien Vehent
 title: Beyond The Security Team
+excerpt_separator: <!--more-->
 ---
 
 _This post is the transcript of a keynote I gave to DevSecCon Seattle in September 2019._
@@ -23,7 +24,7 @@ Infrastructure security is probably where security teams all over the industry s
 ![Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_3_.png](/img/Screenshot_2019-09-25_Beyond_the_Security_Team_-_DevSecCon_KeyNote_3_.png)
 
 Up until recently, this was true for my group as well. But after years of working closely with ops on hardening our AWS accounts, improving logging, integrating security testing in deployments, secrets managements, instances updates, and so on, we have reached the point where things are pretty darn good. Instead of implementing new infrastructure security controls, we spend most of our time making sure the controls that exist don’t regress.
-
+<!--more-->
 The infrastructure certainly does continue to evolve, but operations teams have matured to the point of becoming their own security teams. In most cases, they know best how to protect their environments. We continue to help, of course. We’re not far away. We talk daily. We have their back during security incidents and for the occasional security review. We also use our metrics to call out areas of improvements. But that’s not a massive amount of work compared to our investment from previous years.
 
 I have advocated for some time now that operations teams make the best security teams, and every interaction that I have with the ops of the Firefox organization confirm that impression. They know security just as well as any security engineer would, and in most operational domains, they are the security experts. Effectively, security has gone beyond the security team.

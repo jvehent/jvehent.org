@@ -2,6 +2,7 @@
 layout: post
 author: Julien Vehent
 title: 7 years at Mozilla
+excerpt_separator: <!--more-->
 ---
 
 Seven years ago, on April 29th 2013, I walked into the old Castro Street Mozilla headquarters in Mountain View for my week of onboarding and orientation. Jubilant and full of imposter syndrom, that day marked the start of a whole new era in my professional career.
@@ -19,7 +20,7 @@ Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de 
 Pascal's famous quote - If I had more time, I would have written a shorter letter - is strong advice. One of the best way to disrupt any discussion or debate is indeed to be overly verbose, to extend your commentary into infinity, and to bore people to death.
 
 Here's the thing: nobody cares about the history of the universe. Be brief. If someone asks for someone specific, give them that information, and perhaps mention that there's more to be said about it. They'll let you know if they are interested in hearing the backstory.
-
+<!--more-->
 People like to hear themselves talk. I certainly do. But over time I realized that, by being brief, I get a lot more attention from people, so they ask more questions, reach out more often, because they know I won't drag them into a lengthy debate.
 
 But don't fall into the extreme opposite. Being overly brief can be detrimental to a conversation, or make you appear like you don't care to participate. The is a right balance to be found between too short and too long, depending on the context and your audience.
