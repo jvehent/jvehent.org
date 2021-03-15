@@ -19,6 +19,12 @@ section {
 
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+}
+
 .wrapper ul li{
     border-bottom: 3px dotted gray;
 }
