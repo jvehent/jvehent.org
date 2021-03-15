@@ -12,7 +12,9 @@ I'm not going to spend an entire post reminiscing about the good ol' days (thoug
 # Be brief
 
 ```
-Je n’ai fait celle-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte.
+Je n’ai fait celle-ci plus longue
+que parce que je n’ai pas eu le loisir
+de la faire plus courte.
 
 - Blaise Pascal
 ```
