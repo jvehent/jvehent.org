@@ -2,17 +2,18 @@
 ---
 
 @import "{{ site.theme }}";
-/*
+
 .wrapper {
-    width: 800px;
+    width: 1400px;
 }
 
+/*
 header {
     width: 100px;
 }
 */
 section {
-    //width: 650px;
+    width: 1000px;
     font-family: "New Century Schoolbook","Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     font-size: 1.2em;
 
