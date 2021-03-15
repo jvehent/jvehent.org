@@ -5,6 +5,7 @@
 
 body {
     font-family: "New Century Schoolbook","Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-size: 1.2em;
 }
 
 .wrapper {
@@ -19,10 +20,10 @@ section {
     width: 70%;
 }
 
-.wrapper.ul.li{
+.wrapper ul li{
     border-bottom: 3px dotted gray;
 }
 
-.wrapper.ul.li.h2 {
+.wrapper ul li h2 {
     margin: 20px;
 }
