@@ -2,6 +2,7 @@
 author: Julien Vehent
 layout: post
 excerpt_separator: <!--more-->
+title: Interviewing tips for junior engineers
 ---
 I was recently asked by the brother of a friend who is about to graduate for tips about working in IT in the US. His situation is not entirely dissimilar to mine, being a foreigner with a permit to work in America. Below is my reply to him, that I hope will be helpful to other young engineers in similar situations.
 <!--more-->
