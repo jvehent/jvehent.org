@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 
 This is a small collection of management advice I've picked up over the years. I find them useful when managing remote teams, but you could - and probably should - apply them to all management settings. It's not by any mean an exhaustive list. At best it's a starting point in making one think through the way they manage engineering teams.
 
+<!--more-->
+
 # Background
 
 I've been managing remotely for the past five years, after a decade of being an individual contributor both in office and remotely. Engineering management is hard. You need to be a good engineer, but also a good manager. New managers typically get into the field by being good engineers for long enough that it is assumed they'll also be good managers. But people are not computers, and you can't engineer your way around managing a team efficiently. It's an entirely new set of skills you have to learn, and one where making mistakes has direct consequences on people's careers and livelihood. 
