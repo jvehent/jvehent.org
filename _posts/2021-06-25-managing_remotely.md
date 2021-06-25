@@ -9,6 +9,8 @@ After five years of managing teams remotely, and a few more as a remote individu
 
 When managing remote teams, communication is harder, building a culture takes more time, detecting and handling performance issues is more difficult, etc. All the signals you'd naturally collect by being surrounded by the people you manage for several hours a day must not be specificallyacquired through well established processes. I'd like to describe some of those processes that I found useful.
 
+<!--more-->
+
 # 1. Measure transparently
 
 The routine of a remote manager is very different from that of an office manager. While your calendar is still split in 30min/1h meetings all day long, you'll see your entire team as a group perhaps once a twice a week, as opposed to eight hours every day. Your team members get a **lot less** of your time, and as a result, they also lose the micro-feedback they'd normally get by talking to you several times a day.
