@@ -35,25 +35,25 @@ Humans will naturally look out for each other in a group setting. And when we ar
 
 It's been a tough year. And for many, it's been their first year of remote work. The saying goes that pandemic-work-from-home is not work-from-home, which is true, and we are dealing with an extreme level of isolation. But it is also true that being fully remote, even outside a pandemic, can make you feel very detached from your team.
 
-Managers can help break the isolation by creating a culture of open communication. Everyone should feel safe to share their ideas, feedback and comments on everyone else's work. And they should do so in a polite, professional and respectful manner. The role of the manager in these conversation is to moderate and empower.
+Managers can help break the isolation by creating a culture of open communication. Everyone should feel safe to share their ideas, feedback and comments on everyone else's work. And they should do so in a polite, professional and respectful manner. The role of the manager in these conversations is to moderate and empower.
 
-Moderation is needed to make progress on difficult topics, keeping the conversation on track and making sure everyone gets a say. Some technical features of modern video-conferencing systems can help with that, such as the "raise hand" feature in Google Meet, but it remains the role of the moderator to ensure even the quieter members of the team have an opportunity to share their thoughts. There's a balance to be found here, as you don't want aggressive debates, but you also don't want dull meeting where no one speaks up.
+Moderation is needed to make progress on difficult topics, keeping the conversation on track and making sure everyone gets a say. Some technical features of modern video-conferencing systems can help, such as the "raise hand" feature in Google Meet, but it remains the role of the moderator to ensure even the quieter members of the team have an opportunity to share their thoughts. There's a balance to be found: you want passionate debates, but not aggressive ones, and certainly not dull meeting where no one speaks up.
 
-Empowerment supports the less vocal members of the team into speaking up and sharing their ideas by creating a safe environment. And if they are not yet comfortable doing so in a large group setting, should allow them to pass that feedback through their manager, or through any other channel (email, doc comments, etc). What you want to watch for here is making sure these comments are heard and taken into account, not just silently discarded. Praise people who spent extra time providing feedback and comments on their peers work, and create that culture of safe and healthy communication within the team. It's a muscle, the more you use it, the stronger it gets.
+Empowerment supports the less vocal members of the team into speaking up and sharing their ideas by creating safe environments. And if they are not yet comfortable doing so in a large group setting, which is okay, allow them to pass that feedback through you, or through any other communication channel (email, doc comments, etc). You want to make sure all comments are heard and taken into account, and not just silently discarded. Praise people who spend extra time providing feedback and comments on their peers work, and create that culture of safe and healthy collaboration within the team. It's a muscle: the more you use it, the stronger it gets.
 
-Compared to in-person communication, all remote communication channels are slow and frustrating to use in group settings. It's not pleasant to get interrupted when in-person, but it's even worse in video-conferencing because there's absolutely no way for two people to speak at the same time. As a manager, it is critical to establish respectful communication patterns within your team, or you run into the risk of isolating folks even further.
+Compared to in-person communication, all remote communication channels are slow and frustrating to use in group settings. It's not pleasant to get interrupted when in-person, but it's even worse in video-conferencing because there's absolutely no way for two people to speak at the same time. As a manager, establish respectful communication patterns within your team, or you may run into the risk of isolating folks even further.
 
 # 4. Mentor explicitely and implicitely
 
-I often hear the concern that junior folks need to be in the office to grow into senior role, while senior folks may have acquired the maturity to be remote. And while I agree that in-person learning is generally better than remote-learning, I do think both can work quite well under the right structure.
+I often hear the concern that junior members need to be in the office to grow into senior role, while senior folks may have acquired the maturity to be remote. And while I agree that in-person learning is generally better than remote-learning, I do think both can work quite well under the right structure. After all, I have personally grown tremendously over the past decade, and I've been entirely remote the whole time.
 
-Regardless of the geographic strategy, healthy teams naturally mentor junior folks implicitely. When they join the team, members of the team will take turns in training and teaching what they know to the junior members. This often does not require a predefined structure, and is simply a normal dynamic of a healthy team. (a corollary is that unhealthy teams often lack this implicit mentoring culture).
+Regardless of the geographic strategy, healthy teams naturally mentor junior folks implicitely. When they join the team, senior members will take turns to train and teach what they know to junior members. This often does not require a predefined structure, and is simply a natural dynamic of a healthy team. (a corollary is that unhealthy teams often lack this implicit mentoring culture).
 
-But remote settings make this implicit mentoring harder and more costly. It still happens, of course, as junior members collaborate with senior members. But the junior members won't be able to listen in on office conversations the senior members may be having. They won't be able to peak in those architecture meetings. They won't acquire historical knowledge over lunch.
+But remote settings make this implicit mentoring harder and more costly. It still happens, of course, as junior members collaborate with senior members. But the junior members won't be able to listen in on office conversations. They won't be able to peek at those architecture meetings. They won't acquire historical knowledge over lunch. And so on...
 
 So in addition to implicit mentoring, it is also critical to have explicit mentoring in place. New members of the team should have at least two senior members assigned as mentors. They should have regular meetings with them where they can ask questions, acquire the history, propose ideas, etc.
 
-Why two mentors? Because you want to reduce the impact of mentoring as much as possible. And you want to make it possible for the mentee to round-robin their questions so they don't feel like they are always bothering the same person.
+Why two mentors? Because you want to reduce the impact of mentoring as much as possible. And you want to make it possible for the mentees to round-robin their questions so they don't feel like they are always bothering the same person.
 
 And as a manager, check-in on the mentee and mentors regularly to make sure the relationship is healthy and productive. Mentees should feel supported, have their questions answered, and get a sense of growth. Mentors should find the mentoring load adequate and get a sense of pride from helping grow the next generation.
 
@@ -63,32 +63,32 @@ As an aside, there's no notion of age or level of experience when I use the term
 
 There's a lot more I'd like to say about managing remote teams, but this is already a long post and I want to be mindful of your time and attention. So we'll keep this short, and maybe I'll do another post in the future.
 
-But I would like to finish on a somewhat lighter note. A bit of self-deprecation should do.
+But I would like to finish on a somewhat lighter note. A bit of self-deprecation, if you will.
 
-You see, I suffer from a strong case of Resting Bitch Face. To the point where it is nearly impossible for my coworker to tell if I'm happy, sad, frustrated, angry, or simply tired.
+You see, I suffer from a strong case of Resting Bitch Face. To the point where it is nearly impossible for my coworkers to tell if I'm happy, sad, frustrated, angry, or simply tired.
 
 Let me illustrate the point a little more clearly.
 
-This is my facial expression when a coworker is delivering an update on a project.
+This is my facial expression when a coworker delivers an update on a project.
 
 ![julien-rfb](/img/IMG_20210625_182743.jpg)
 
-While this is my facial expression when hearing about a major performance issue.
+And this is my facial expression when hearing about a major performance issue a team member may be experiencing.
 
 ![julien-rfb](/img/IMG_20210625_182743.jpg)
 
-And, finally, to further drive the point home, this is what I look like when someone announces a big success for the team.
+And, finally, to further drive the point home, this is what I look like when someone announces a big success to the team.
 
 ![julien-rfb](/img/IMG_20210625_182743.jpg)
 
-As you can tell from these pictures, it can be somewhat difficult for the untrained eye to tell the exact mood I may be in during a meeting. And this has caused issues in the past, where team members worried or even stressed about their performance because of how I looked during meetings.
+As you can tell from these pictures, it can be somewhat difficult for the untrained eye to tell the exact mood I may be in at a given point in time. And this has caused issues in the past, where members of my team worried or even stressed about their situation because of how I looked during meetings.
 
 ![hulk](https://moderncavedweller.files.wordpress.com/2017/07/aff2b3538b7ba57204e9ba9de6674829daa99446725bad4655e97d49c1698697_zpsyefwwano.jpg)
 
-Now I'm not the most expressive person in the world. And the long hours spent staring at a screen don't exactly help relax zygomatic bones. But I'm also a fairly happy and cheerful person, so I don't want to give out the impression that, unlike Bruce Banner, I'm always angry.
+Now I'm not the most expressive person in the world. And the long hours spent staring at a screen don't exactly help relax the zygomatics. But I'm also a fairly happy and cheerful person, so I don't want to give out the impression that, unlike Bruce Banner, I'm always angry.
 
-Over time, I've learned to turn my facial expressions into words. The RBF may still be on, but I'll explicitely say what is going through my mind, and not expect folks to extrapolate from the video feed.
+Over time, I've learned to turn my facial expressions into words. The RBF may still be on. I fear it is hear to stay. Thanks Dad...  But now I'll explicitely say what is going through my mind, and not expect folks to extrapolate it from the video feed.
 
-I strongly urge you to do the same, whether you have the most expressive face or not. The last thing you want when managing remote is for folks to navigate uncertain body language through an imperfect medium.
+I strongly urge you to do the same, whether you have the most expressive face or not. The last thing you want when managing remotely is for folks to navigate uncertain body language through an imperfect medium.
 
 And, seriously, smile a little!
