@@ -45,7 +45,7 @@ Empowerment supports the less vocal members of the team into speaking up and sha
 
 Compared to in-person communication, all remote communication channels are slow and frustrating to use in group settings. It's not pleasant to get interrupted when in-person, but it's even worse in video-conferencing because there's absolutely no way for two people to speak at the same time. As a manager, establish respectful communication patterns within your team, or you may run into the risk of isolating folks even further.
 
-# 4. Mentor explicitely and implicitely
+# 4. Mentor explicitly and implicitly
 
 I often hear the concern that junior members need to be in the office to grow into senior role, while senior folks may have acquired the maturity to be remote. And while I agree that in-person learning is generally better than remote-learning, I do think both can work quite well under the right structure. After all, I have personally grown tremendously over the past decade, and I've been entirely remote the whole time.
 
