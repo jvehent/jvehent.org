@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 
 After five years of managing teams remotely, and a few more as a remote individual contributor, I've picked up a few patterns that I thought may be valuable to share. Engineering management is hard. You need to be a good engineer, but also a good manager. New managers typically get into the field by being good engineers for long enough that it is assumed they'll also be good managers. But people are not computers, and you can't engineer your way around managing a team efficiently. It's an entirely new set of skills you have to learn, and one where making mistakes has direct consequences on people's careers and livelihood. 
 
-When managing remote teams, communication is harder, building a culture takes more time, detecting and handling performance issues is more difficult, etc. All the signals you'd naturally collect by being surrounded by the people you manage for several hours a day must not be specificallyacquired through well established processes. I'd like to describe some of those processes that I found useful.
+When managing remote teams, communication is harder, building a culture takes more time, detecting and handling performance issues is more difficult, etc. All the signals you would naturally collect by being surrounded by the people you manage for several hours a day must now be acquired through well established processes. I'd like to describe some of the processes that I found useful.
 
 <!--more-->
 
