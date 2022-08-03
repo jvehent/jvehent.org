@@ -73,15 +73,15 @@ Let me illustrate the point a little more clearly.
 
 This is my facial expression when a coworker delivers an update on a project.
 
-![julien-rfb](/img/IMG_20210625_182743.jpg)
+![julien-rfb](/img/IMG_20210625_182743.jpg){: width="250" }
 
 And this is my facial expression when hearing about a major performance issue a team member may be experiencing.
 
-![julien-rfb](/img/IMG_20210625_182743.jpg)
+![julien-rfb](/img/IMG_20210625_182743.jpg){: width="250" }
 
 And, finally, to further drive the point home, this is what I look like when someone announces a big success to the team.
 
-![julien-rfb](/img/IMG_20210625_182743.jpg)
+![julien-rfb](/img/IMG_20210625_182743.jpg){: width="250" }
 
 As you can tell from these pictures, it can be somewhat difficult for the untrained eye to tell the exact mood I may be in at a given point in time. And this has caused issues in the past, where members of my team worried or even stressed about their situation because of how I looked during meetings.
 
