@@ -19,7 +19,7 @@ alert udp $EXTERNAL_NET 53 -> $HOME_NET any
 ```
 _an example of snort rule that alerts on suspicious DNS traffic_
 
-From a skillset perspective, security engineers focused primarily on network infrastructure and threat intelligence. Aggregating IOCs, applying rules to well-placed sensors and investigating alerts was an analyst's primary focus. You'd place tripwires all over the place, and wait for an attacker to trigger an alert.
+Security engineers focused primarily on network infrastructure and threat intelligence. Aggregating IOCs, applying rules to well-placed sensors and investigating alerts was an analyst's primary focus. You'd place tripwires all over the place, and wait for an attacker to trigger an alert.
 
 This seems to have served us well for a long time. We refined it over the years, with more sophisticated alert languages, frameworks like MITRE ATT&CK that helped organize threats, log aggregation systems like Splunk, etc. And judging by the content of most BSides conferences, it is still the go-to approach for a lot of teams out there.
 
@@ -31,11 +31,11 @@ While traditional security administrators used their systems and network skills 
 
 The benefits of these changes are very real, and treating these modern systems as software opens up a world of possibilities. Unit tests, for example, allow detection engineers to iterate quickly on their detection rules without having to wait for logs to flow through test systems. Coding standards facilitate collaborations in large teams, and lead to higher quality. Peer reviews reduce risks and disseminate knowledge. And so on. All the benefits that the field of software engineering have accumulated over the years are transferable detection engineering. But we need security engineers who are trained in software development, a skillset that is still not a fundamental part of the cybersecurity curriculum.
 
-Data Engineering
+**Data Engineering**
 
-Back in 2017-or-so, we tried to rebuild Mozilla's threat detection tooling using a log engine called [Hindsight](https://github.com/mozilla-services/hindsight), borne out of the deprecation of another log engine called [Heka](https://github.com/mozilla-services/heka). Hindsight's Lua engine was interesting and powerful, because we could ingest very large volumes of logs in real time and apply relatively complex detection logic.
+Back in 2017-or-so, we had developed this appetite for software engineering in threat detection, and rebuilt Mozilla's pipeline using a log engine called [Hindsight](https://github.com/mozilla-services/hindsight). Hindsight's Lua engine was powerful and could ingest large volumes of logs in real time while applying complex detection logic.
 
-We quickly ran into the limitations of the platform, and Hindsight's threat detection never really made it to production. Chapter 8 of Securing Devops, Analyzing logs for fraud and attacks, is perhaps the only relic left of that attempt. But we learned a very valuable lesson that opened up a new area for us: data pipelines!
+Once we realized how much we could do with complex detection logics, we pushed further and further. However, Lua is not a practical language that scales well to large codebases, and we quickly ran into the limitations of the platform, and Hindsight's threat detection never really made it to production. Chapter 8 of Securing Devops, Analyzing logs for fraud and attacks, is perhaps the only relic left of that attempt. But we learned a very valuable lesson that opened up a new area for us: data pipelines!
 
 While we were failing at using Hindsight, another team at Mozilla had migrated to Apache Beam and GCP Dataflow. Their primary purpose was processing Firefox's telemetry, but an engineer in my team (Hey Aaron) figured that we could use the exact same tech for threat detection. He built a prototype in Dataflow and demonstrated the value of using a streaming pipeline.
 
