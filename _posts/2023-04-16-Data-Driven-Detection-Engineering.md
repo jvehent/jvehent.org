@@ -35,8 +35,52 @@ The benefits of these changes are very real, and treating these modern systems a
 
 Back in 2017-or-so, we had developed this appetite for software engineering in threat detection, and rebuilt Mozilla's pipeline using a log engine called [Hindsight](https://github.com/mozilla-services/hindsight). Hindsight's Lua engine was powerful and could ingest large volumes of logs in real time while applying complex detection logic.
 
-Once we realized how much we could do with complex detection logics, we pushed further and further. However, Lua is not a practical language that scales well to large codebases, and we quickly ran into the limitations of the platform, and Hindsight's threat detection never really made it to production. Chapter 8 of Securing Devops, Analyzing logs for fraud and attacks, is perhaps the only relic left of that attempt. But we learned a very valuable lesson that opened up a new area for us: data pipelines!
+```
+function process_message()
+  local t = read_message("Timestamp")
+  reqcnt:add(t, 1, 1)
 
-While we were failing at using Hindsight, another team at Mozilla had migrated to Apache Beam and GCP Dataflow. Their primary purpose was processing Firefox's telemetry, but an engineer in my team (Hey Aaron) figured that we could use the exact same tech for threat detection. He built a prototype in Dataflow and demonstrated the value of using a streaming pipeline.
+  local current_minute = os.date("%Y%m%d%H%M", math.floor(t/1e9))
+  local cf = seenip[current_minute]
+  if not cf then
+    cf = cuckoo_filter.new(max_cli_min)
+  end
+  local remote_addr = read_message("Fields[remote_addr]")
+  local ip = ipv4_str_to_int(remote_addr)
+  if not cf:query(ip) then
+    cf:add(ip)
+    seenip[current_minute] = cf
+  end
+  return 0
+end
+```
+_a moving-average analyzer in Hindsight that uses a cuckoo filter to count incoming requests and unique clients_
 
-Data streaming pipelines require a minimal amount of data normalization to function efficiently. When old detection systems were content with ascii logs, data pipelines work on normalized data structures that have pre-determined fields and methods, on top of which detection rules can be implemented.
+Once we realized how much we could do with complex detection logics, we pushed further and further. However, Lua is not a practical language that scales well to large codebases, and we quickly ran into the limitations of the platform. Hindsight's threat detection never really made it to production. Chapter 8 of Securing Devops, Analyzing logs for fraud and attacks, is perhaps the only relic left of that attempt. But we learned a very valuable lesson that opened up a new area for us: data pipelines!
+
+While we were experimenting with Hindsight, another team at Mozilla started using Apache Beam and GCP Dataflow for Firefox's telemetry. An engineer in my team (Hey Aaron) figured out that we could use the exact same technology for threat detection, built a prototype in Dataflow and demonstrated the value of using a streaming pipeline to detect suspicious activity in logs.
+
+```
+.apply(
+    "addon multi ip login session window",
+    Window.<KV<String, String>>into(Sessions.withGapDuration(Duration.standardMinutes(15)))
+        .triggering(
+            Repeatedly.forever(
+                AfterWatermark.pastEndOfWindow()
+                    .withEarlyFirings(
+                        AfterProcessingTime.pastFirstElementInPane()
+                            .plusDelayOf(Duration.standardSeconds(60)))))
+        .withAllowedLateness(Duration.ZERO)
+        .accumulatingFiredPanes())
+```
+_snippet from a Beam rule that detects multiple logins from a single IP_
+
+Data streaming pipelines are very powerful and very complicated. They require data normalization to function efficiently. They can take entire teams of software engineers to stand up and maintain them. And they can also support complex detection logic that was previously out of the reach of detection engineers.
+
+This last point is particularly relevant. Threat detection is slowly transitioning away from tripwire detections, and moving toward malicious behavior analysis. While tripwires could be implemented with hash or string matches, regular expression and threat intelligence, anomaly detection requires implementing statistical models and machine learning that are significantly more complex to build and execute. Data pipelines, by requiring normalization and implementing statistical primitives on normalized data, are central to this technological transition.  
+
+**Detection engineering is software engineering**
+
+The people will have to evolve too. Data pipelines are already more complex than most technologies security engineers have dabbled with, which will raise the importance of strong software engineering foundations. Data pipelines will force security engineers to understand the software principles of modeling and manipulating complex data structures using powerful programming languages. I think this is the major shift from the traditional methods of writing rules in detection systems, and it's an important one that most of the industry is not yet ready for. We're gradually moving away from just writing rules, into implementing large scale detection software that require understanding data science, software engineering and cybersecurity. All of which requires a very different skillset, and one that future detection engineers will have to specifically train or retrain for.
+
+The next generation of threat detection engineers will be software engineers, who happen to specialize in cybersecurity.
