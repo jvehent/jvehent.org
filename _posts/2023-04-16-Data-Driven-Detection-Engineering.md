@@ -25,13 +25,15 @@ This seems to have served us well for a long time. We refined it over the years,
 
 However, my observation over the past five years, first building the threat detection pipeline at Mozilla, then running the Cloud Detection team at Google, is that detection & response has shifted to focus on data driven detection engineering. The future of D&R leverages complex data models using sophisticated pipelines to detect threats in anomalous behaviors. And, as an industry, we're not ready for it.
 
-**Detection Engineering**
+<!--more-->
+
+# Detection Engineering
 
 While traditional security administrators used their systems and network skills to build layers of threat detection, most modern threat detection systems built today require solid software engineering skills. Panther, a popular threat detection platform with a primary focus on AWS, uses Python for all of its [detection rules](https://github.com/panther-labs/panther-analysis/blob/master/rules/aws_cloudtrail_rules/abnormally_high_event_volume.py). Suricata, the most sophisticated IDS system out there, [adopted Lua](https://suricata.readthedocs.io/en/suricata-6.0.0/rules/rule-lua-scripting.html) to support more complex rules. Back when I wrote Securing Devops, we tried to use a tool called Hindsight to write complex threat detection rules, also in Lua. Simpler rule languages are still being developed and have a lot of value, but even [Chronicle's YARA-L](https://cloud.google.com/chronicle/docs/detection/yara-l-2-0-overview) is inching toward turing-completeness. 
 
 The benefits of these changes are very real, and treating these modern systems as software opens up a world of possibilities. Unit tests, for example, allow detection engineers to iterate quickly on their detection rules without having to wait for logs to flow through test systems. Coding standards facilitate collaborations in large teams, and lead to higher quality. Peer reviews reduce risks and disseminate knowledge. And so on. All the benefits that the field of software engineering have accumulated over the years are transferable detection engineering. But we need security engineers who are trained in software development, a skillset that is still not a fundamental part of the cybersecurity curriculum.
 
-**Data Engineering**
+# Data Engineering
 
 Back in 2017-or-so, we had developed this appetite for software engineering in threat detection, and rebuilt Mozilla's pipeline using a log engine called [Hindsight](https://github.com/mozilla-services/hindsight). Hindsight's Lua engine was powerful and could ingest large volumes of logs in real time while applying complex detection logic.
 
@@ -79,7 +81,7 @@ Data streaming pipelines are very powerful and very complicated. They require da
 
 This last point is particularly relevant. Threat detection is slowly transitioning away from tripwire detections, and moving toward malicious behavior analysis. While tripwires could be implemented with hash or string matches, regular expression and threat intelligence, anomaly detection requires implementing statistical models and machine learning that are significantly more complex to build and execute. Data pipelines, by requiring normalization and implementing statistical primitives on normalized data, are central to this technological transition.  
 
-**Detection engineering is software engineering**
+# Detection engineering is software engineering
 
 The people will have to evolve too. Data pipelines are already more complex than most technologies security engineers have dabbled with, which will raise the importance of strong software engineering foundations. Data pipelines will force security engineers to understand the software principles of modeling and manipulating complex data structures using powerful programming languages. I think this is the major shift from the traditional methods of writing rules in detection systems, and it's an important one that most of the industry is not yet ready for. We're gradually moving away from just writing rules, into implementing large scale detection software that require understanding data science, software engineering and cybersecurity. All of which requires a very different skillset, and one that future detection engineers will have to specifically train or retrain for.
 
