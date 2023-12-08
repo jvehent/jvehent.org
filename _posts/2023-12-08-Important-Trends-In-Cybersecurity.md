@@ -7,13 +7,14 @@ excerpt_separator: <!--more-->
 
 _Some observations on how our field is evolving in four distinct areas: security keys, reduction in attack surfaces, regulatory compliance and shifting left,._
 
-<!--more-->
 
 # Security keys
 
 Perhaps the most impactful trend to security posture is the move away from passwords to security keys, which has eliminated an incredibly large attack surface entirely. We have seen again and again that organizations that fully adopt security keys and webauthn can prevent phishing and password stuffing attacks entirely, but a fair amount of skepticism remained on the maturity of security keys and their practical daily use.
 
 This is changing. Most, if not all, tech companies now require security keys internally and have matured the tooling to manage them. Google Workspace and Microsoft 365 have first class support of security keys, making it easy for administrators to issue and manage the keys.
+
+<!--more-->
 
 Users are getting more familiar with them too. Back in 2017 or 2018, usability had a lot of rough edge, and caused confusion which led to frustration. Nowadays, tapping a security key to confirm an authentication step is as natural as entering a password. Yubikeys and Google Titan keys are compatible with virtually all device types, and yes that includes smartphones.
 
