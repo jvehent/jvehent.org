@@ -63,12 +63,17 @@ It makes hiring folks difficult, and people who have both skillsets will experie
 demand and the associated high salaries for years to come.
 
 Obviously the solution is more AI training, which a lot of engineers, junior and senior, 
-are undertaking. But I would also like to see the operational aspect more seriously 
+are undertaking. There is a very real urgency for detection engineers, and really everyone
+in cybersecurity, to recognize the value of modern AI models and identify ways to make use
+of them. If you're still grumpy or sarcastic about AI, spend a few weeks looking at the 
+latest advancements in this space, because they will absolutely change your mind.
+
+But I would also like to see the operational aspect more seriously 
 considered by our junior folks. It takes years to acquire the mental models of a senior 
 analyst, one who is able to effectively identify threats and discard false positives. 
 If we want security-focused AI models to get better and more accurate, we need the people
 who train them to have deep experiences in cybersecurity.
 
 Beyond the “detection engineers is software engineering” idea is the “security engineering
-is an AI science discipline” concept. It will take years for this to mature, but it is 
-undeniably the direction we’re heading. 
+is an AI science discipline” concept. Transforming our discipline is not going to happen
+overnight, but it is undeniably the direction we’re heading. 
