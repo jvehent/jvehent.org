@@ -23,6 +23,7 @@ to “detection as code” and now “detection as models” is just starting to
 promising results. But there is a very real risk that we might just build the
 wrong thing.
 <!--more-->
+
 One critical component of our team structure is the balance between engineering 
 and operations. Detection Engineers at Google’s D&R spend a significant portion 
 of their time on-call triaging tickets as part of our 24/7 security surveillance 
