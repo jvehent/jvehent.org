@@ -67,9 +67,7 @@ are undertaking. But I would also like to see the operational aspect more seriou
 considered by our junior folks. It takes years to acquire the mental models of a senior 
 analyst, one who is able to effectively identify threats and discard false positives. 
 If we want security-focused AI models to get better and more accurate, we need the people
-who train them to have deep experiences in cybersecurity. And the opposite is true as well: 
-engineers with strong AI skills who want to build security solutions need to spend time 
-on the ground, learning how investigations work.
+who train them to have deep experiences in cybersecurity.
 
 Beyond the “detection engineers is software engineering” idea is the “security engineering
 is an AI science discipline” concept. It will take years for this to mature, but it is 
