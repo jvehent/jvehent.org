@@ -17,7 +17,7 @@ This type of attack is an interesting evolution of threat vectors we have observ
 
 In the cloud, we see this around the Identity and Access Management (IAM) layers, where leaked service account keys can be stolen and used to further compromise cloud projects. When credentials are not sufficiently protected, attackers can gain access and issue remote commands inside the management infrastructure.
 
-From a detection and response standpoint, we traditionally focus on protecting corporate environments through heuristics like developing malware signatures, tripwires, or trying to identify indicators of compromise such as file modifications and suspicious network connections.
+From a detection and response standpoint, we traditionally focus on protecting corporate environments through host-based heuristics like developing malware signatures, tripwires, or trying to identify indicators of compromise such as file modifications and suspicious network connections.
 
 However, in environments heavily dependent on identity and access management, where attackers can effectively replicate the activity of legitimate administrators by stealing credentials, those traditional detection heuristics are fundamentally insufficient. They fail to provide visibility into the threat actor’s behavior. We are forced to find ways to separate legitimate activity performed by the organization’s members from activity that is anomalous and should be scrutinized.
 
