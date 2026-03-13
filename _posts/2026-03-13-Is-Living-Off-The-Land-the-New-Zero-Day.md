@@ -13,6 +13,8 @@ Instead, Stryker was compromised through stolen credentials, granting the attack
 
 This attack is an interesting evolution of threat vectors we have observed over the past decade, particularly in cloud-heavy environments. Intrusions now often rely on what we call "living off the land" attacks. Rather than developing a specific piece of code to compromise the infrastructure, the actors gain access to the standard tooling used by the legitimate administrators and engineers who maintain the environment.
 
+<!--more-->
+
 In the cloud, we see this around the Identity and Access Management (IAM) layers, where leaked service account keys can be stolen and used to further compromise cloud projects. When credentials are not sufficiently protected, attackers can gain access and issue remote commands inside the management infrastructure.
 
 From a detection and response standpoint, we traditionally focus on protecting corporate environments through heuristics like developing malware signatures, tripwires, or trying to identify indicators of compromise such as file modifications and suspicious network connections.
