@@ -5,13 +5,13 @@ title: Is Living Off The Land the New Zero-Day?
 excerpt_separator: <!--more-->
 ---
 
-I want to come back to the Stryker cyberattack that occurred earlier this week. Stryker, a medical device company, was targeted on Wednesday by a threat actor group associated with the Iranian government, seemingly in retaliation the offensive conducted by the American and Israeli governments.
+I want to come back to the Stryker cyberattack that occurred earlier this week. Stryker, a medical device company, was targeted on Wednesday by a threat actor group associated with the Iranian government, allegedly in retaliation to the offensive conducted by the American and Israeli governments.
 
 The environment itself is a fairly standard corporate setting, powered mostly by Windows devices. What is critical about the attack against Stryker—from both a security strategy and a detection perspective—is that it appears no zero-day exploit, external malware, or any traditional intrusion methods were used to compromise the infrastructure.
 
-Instead, Stryker was compromised through stolen credentials, granting the attackers access to their internal IT infrastructure. The threat actors then leveraged this access to issue remote wipe and remote factory reset commands to the corporate fleet of Windows machines.
+Instead, it is hypothesized that Stryker could have been compromised through leaked credentials, granting the attackers access to their internal IT infrastructure (this is not confirmed and I'm not making any statement on ongoing forensics, but it is the publicly discussed hypothesis). The threat actors may have leveraged this access to issue remote wipe and remote factory reset commands to the corporate fleet of Windows machines.
 
-This attack is an interesting evolution of threat vectors we have observed over the past decade, particularly in cloud-heavy environments. Intrusions now often rely on what we call "living off the land" attacks. Rather than developing a specific piece of code to compromise the infrastructure, the actors gain access to the standard tooling used by the legitimate administrators and engineers who maintain the environment.
+This type of attack is an interesting evolution of threat vectors we have observed over the past decade, particularly in cloud-heavy environments. Intrusions now often rely on what we call "living off the land" attacks. Rather than developing a specific piece of code to compromise the infrastructure, the actors gain access to the standard tooling used by the legitimate administrators and engineers who maintain the environment.
 
 <!--more-->
 
