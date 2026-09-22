@@ -33,11 +33,11 @@ Detection has to evolve to take into account the co-occurrence of signals and th
 
 At Hugging Face, the combinations were there:
 
-- about 17,600 actions from a swarm of short-lived sandboxes;
-- the same credentials used from several environments at once;
-- workloads reading metadata credentials and minting tokens they had never touched before;
-- sudden outbound traffic to paste sites and file drops;
-- more than 180 VPN enrollments from hosts that came and went.
+- about 17,600 actions from a swarm of short-lived sandboxes
+- the same credentials used from several environments at once
+- workloads reading metadata credentials and minting tokens they had never touched before
+- sudden outbound traffic to paste sites and file drops
+- more than 180 VPN enrollments from hosts that came and went
 
 In a world full of agents, each of those alone is noise. Together, they're an intrusion.
 
